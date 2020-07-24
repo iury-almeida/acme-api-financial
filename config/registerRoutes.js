@@ -1,7 +1,9 @@
 'use strict';
 
-const testeRoute = require('../core/funcionality/routes');
+const paidBillRoutes = require('../core/paidBill/paidBillRoutes');
+const receivedBillRoutes = require('../core/receivedBill/receivedBillRoutes');
 
 module.exports = (app) => {
-    testeRoute(app);
+    paidBillRoutes(app);
+    receivedBillRoutes(app);
 }
